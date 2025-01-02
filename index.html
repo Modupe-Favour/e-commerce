@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Aura</h1> 
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a> 
+        </nav> 
+        <div class="cart">
+            <button id="view-cart-btn">Add ToCart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+    <main>
+        <section class="banner"> 
+            <h2>Your One-Stop Shop for Quality Sports Equipment</h2> 
+            <button onclick="window.location.href='products.html'">Shop Now</button> 
+        </section>
+        <section class="products">
+            <div class="product" data-id="1"> 
+                <img src="Rizzy-removebg-preview.png" alt="Football"> 
+                <h3>Football</h3> 
+                <p>$65</p>
+                <button onclick="addToCart(1)">Add to Cart</button> 
+            </div> 
+            <div class="product" data-id="2"> 
+                <img src="b-removebg-preview.png" alt="Basketball"> 
+                <h3>Basketball</h3> 
+                <p>$50</p> 
+                <button onclick="addToCart(2)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="3"> 
+                <img src="soccer jey.jpg" alt="Soccer Jerseys"> 
+                <h3>Soccer Jerseys</h3> 
+                <p>$70</p> 
+                <button onclick="addToCart(3)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="4"> 
+                <img src="Messi.jpg" alt="Messi"> 
+                <h3>Cleats</h3> 
+                <p>$30</p> 
+                <button onclick="addToCart(4)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="5"> 
+                <img src="gloves.jpg" alt="Gloves"> 
+                <h3>Goal-Keeper Gloves</h3> 
+                <p>$25</p> 
+                <button onclick="addToCart(5)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="6"> 
+                <img src="bottle.jpg" alt="Bottles"> 
+                <h3>Water Bottles</h3> 
+                <p>$10</p> 
+                <button onclick="addToCart(6)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="7"> 
+                <img src="bags.jpg" alt="Bags"> 
+                <h3>Soccer Gear Bag</h3> 
+                <p>$40</p> 
+                <button onclick="addToCart(7)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="8"> 
+                <img src="shin.jpg" alt="shin"> 
+                <h3>Shin Gaurds</h3> 
+                <p>$15</p> 
+                <button onclick="addToCart(8)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="9"> 
+                <img src="socks.jpg" alt="socks"> 
+                <h3>Grip Socks</h3> 
+                <p>$10</p> 
+                <button onclick="addToCart(9)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="10"> 
+                <img src="net.jpg" alt="net"> 
+                <h3>Soccer Nets</h3> 
+                <p>$249</p> 
+                <button onclick="addToCart(10)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="11"> 
+                <img src="real-madrid-tiro-24-competition-training-tracksuit-bottoms-kids.avif" alt="Tracksuits"> 
+                <h3> Real Madrid Tracksuits </h3> 
+                <p>$119</p> 
+                <button onclick="addToCart(11)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="12"> 
+                <img src="train.jpg" alt="train"> 
+                <h3> Training Equipment </h3> 
+                <p>$130</p> 
+                <button onclick="addToCart(12)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="13"> 
+                <img src="twear is crape.jpg" alt="Thermal wear"> 
+                <h3> Soccer Thermal Wear </h3> 
+                <p>$33</p> 
+                <button onclick="addToCart(13)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="14"> 
+                <img src="tennis rack.jpg" alt="tennis racket"> 
+                <h3> Tennis Racket </h3> 
+                <p>$19</p> 
+                <button onclick="addToCart(14)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="15"> 
+                <img src="yonex-championship-tennis-ball-3-ball-can.webp" alt="Tennis ball"> 
+                <h3> Tenis Balls </h3> 
+                <p>$5</p> 
+                <button onclick="addToCart(15)">Add to Cart</button> 
+            </div>
+            <div class="product" data-id="16"> 
+                <img src="basketball-hoop-assembly.jpg" alt="baskey"> 
+                <h3>Basketball Net </h3> 
+                <p>$120</p> 
+                <button onclick="addToCart(16)">Add to Cart</button> 
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+         <p>&copy; 2024 Sports Gear Hub. All rights reserved.</p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
